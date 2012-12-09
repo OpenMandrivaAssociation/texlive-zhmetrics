@@ -4989,3 +4989,16 @@ encodings (GBK and UTF-8) are supported.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> r206-2
++ Revision: 757782
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> r206-1
++ Revision: 719973
+- texlive-zhmetrics
+- texlive-zhmetrics
+- texlive-zhmetrics
+
