@@ -6,7 +6,7 @@
 # catalog-version r206
 Name:		texlive-zhmetrics
 Version:	r206
-Release:	4
+Release:	5
 Summary:	TFM subfont files for using Chinese fonts in 8-bit TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/metrics/zhmetrics
