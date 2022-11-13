@@ -1,19 +1,13 @@
-# revision 22207
-# category Package
-# catalog-ctan /fonts/metrics/zhmetrics
-# catalog-date 2009-11-10 09:00:49 +0100
-# catalog-license lppl
-# catalog-version r206
 Name:		texlive-zhmetrics
-Version:	r206
-Release:	11
+Version:	22207
+Release:	1
 Summary:	TFM subfont files for using Chinese fonts in 8-bit TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/metrics/zhmetrics
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/zhmetrics.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/zhmetrics.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/zhmetrics.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/zhmetrics.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/zhmetrics.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/zhmetrics.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ are supported: kai, song, lishu, fangsong, youyuan and hei. Two
 encodings (GBK and UTF-8) are supported.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -4982,23 +4976,11 @@ encodings (GBK and UTF-8) are supported.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> r206-2
-+ Revision: 757782
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> r206-1
-+ Revision: 719973
-- texlive-zhmetrics
-- texlive-zhmetrics
-- texlive-zhmetrics
-
