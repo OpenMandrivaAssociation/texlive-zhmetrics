@@ -1,6 +1,6 @@
 Name:		texlive-zhmetrics
 Version:	22207
-Release:	1
+Release:	2
 Summary:	TFM subfont files for using Chinese fonts in 8-bit TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/metrics/zhmetrics
