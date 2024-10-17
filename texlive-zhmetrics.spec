@@ -3,7 +3,7 @@ Version:	22207
 Release:	2
 Summary:	TFM subfont files for using Chinese fonts in 8-bit TeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/metrics/zhmetrics
+URL:		https://www.ctan.org/tex-archive/fonts/metrics/zhmetrics
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/zhmetrics.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/zhmetrics.doc.r%{version}.tar.xz
