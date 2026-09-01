@@ -1,9 +1,10 @@
 %global tl_name zhmetrics
 %global tl_revision 79618
+%global tl_version r206
 
 Name:		texlive-%{tl_name}
 Epoch:		1
-Version:	r206
+Version:	%{tl_version}
 Release:	%{tl_revision}.1
 Summary:	TFM subfont files for using Chinese fonts in 8-bit TeX
 Group:		Publishing
@@ -14,7 +15,7 @@ Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/zhmetrics.doc.r%
 Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/zhmetrics.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 These are metrics to use existing Chinese TrueType fonts in workflows
